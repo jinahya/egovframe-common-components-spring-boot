@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!--
+    Fills ../repository, the project-local Maven repository, with everything the build needs from
+    https://maven.egovframe.go.kr/maven/ so the project builds with that host unreachable.
+
+    Not a reactor module. After bumping egovframe.rte.version / egovframe.web.version in the root
+    pom, run it once and commit ../repository (then add .sha1 files: see README):
+
+        mvn -f mirror/pom.xml
+
+    Contents: the 24 runtime modules (jar, pom, sources), their parent egovframe-rte-root (pom),
+    the platform egovframe-web-config-parent (pom), and egovframework.com.ems:sndng-mail (jar, pom).
+    The three poms are listed as dependencies of type pom; copy-dependencies would not otherwise
+    see them, and Maven cannot read a module pom whose parent is missing. Transitive dependencies
+    are on Maven Central and stay out.
+    -->
+
+  <!-- the root pom is the parent only for its properties and repositories; this is not one of its modules -->
+  <parent>
+    <groupId>com.github.jinahya</groupId>
+    <artifactId>egovframe-common-components-spring-boot</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>egovframe-common-components-spring-boot-mirror</artifactId>
+  <packaging>pom</packaging>
+
+  <properties>
+    <!-- egovframe.rte.version and egovframe.web.version come from the root pom -->
+    <sndng-mail.version>1.0</sndng-mail.version>
+    <mirror.directory>${project.basedir}/../repository</mirror.directory>
+  </properties>
+
+  <dependencies>
+    <!-- parent of every runtime module -->
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-root</artifactId>
+      <version>${egovframe.rte.version}</version>
+      <type>pom</type>
+    </dependency>
+    <!-- the platform that manages the runtime versions -->
+    <dependency>
+      <groupId>org.egovframe.web</groupId>
+      <artifactId>egovframe-web-config-parent</artifactId>
+      <version>${egovframe.web.version}</version>
+      <type>pom</type>
+    </dependency>
+    <!-- required by the common components, served only from this host -->
+    <dependency>
+      <groupId>egovframework.com.ems</groupId>
+      <artifactId>sndng-mail</artifactId>
+      <version>${sndng-mail.version}</version>
+    </dependency>
+
+    <!-- the 24 runtime modules -->
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-fdl-security</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-fdl-access</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-fdl-crypto</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-fdl-cmmn</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-fdl-xml</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-fdl-idgnr</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-fdl-excel</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-fdl-property</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-fdl-string</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-fdl-logging</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-fdl-reactive</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-fdl-filehandling</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-psl-dataaccess</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-psl-data-jpa</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-psl-data-mongodb</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-psl-reactive-cassandra</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-psl-reactive-mongodb</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-psl-reactive-r2dbc</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-psl-reactive-redis</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-ptl-reactive</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-ptl-mvc</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-itl-integration</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-itl-webservice</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>egovframe-rte-bat-core</artifactId>
+      <version>${egovframe.rte.version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <defaultGoal>package</defaultGoal>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <!-- https://central.sonatype.com/artifact/org.apache.maven.plugins/maven-dependency-plugin/versions -->
+        <version>3.8.1</version>
+        <configuration>
+          <outputDirectory>${mirror.directory}</outputDirectory>
+          <useRepositoryLayout>true</useRepositoryLayout>
+          <excludeTransitive>true</excludeTransitive>
+          <overWriteReleases>true</overWriteReleases>
+        </configuration>
+        <executions>
+          <execution>
+            <id>mirror-artifacts</id>
+            <phase>package</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <copyPom>true</copyPom>
+            </configuration>
+          </execution>
+          <execution>
+            <id>mirror-sources</id>
+            <phase>package</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <classifier>sources</classifier>
+              <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
+              <excludeTypes>pom</excludeTypes>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.github.jinahya</groupId>
+    <artifactId>egovframe-common-components-spring-boot</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <!--
+    Upstream's script/ directory (DDL, DML, comments, per database) as classpath resources, verbatim,
+    under egovframe/common-components/script/. Versioned with upstream, like the components jar.
+    The DDL is upstream's: not re-runnable (no IF NOT EXISTS), one file per database, with the
+    shared COMTECOPSEQ sequence table that ID generation needs.
+    -->
+  <artifactId>egovframe-common-components-schema</artifactId>
+  <version>5.0.7</version>
+  <packaging>jar</packaging>
+
+  <name>${project.artifactId}</name>
+  <description>eGovFrame common components (upstream v${project.version}) database scripts, verbatim, as classpath resources: DDL, DML and comments for postgres, mysql, maria, oracle, tibero, altibase, cubrid and goldilocks</description>
+
+  <properties>
+    <upstream.dir>${project.basedir}/../upstream/egovframe-common-components</upstream.dir>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>add-upstream-scripts</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>add-resource</goal>
+            </goals>
+            <configuration>
+              <resources>
+                <resource>
+                  <directory>${upstream.dir}/script</directory>
+                  <targetPath>egovframe/common-components/script</targetPath>
+                </resource>
+                <resource>
+                  <directory>${upstream.dir}</directory>
+                  <includes>
+                    <include>LICENSE</include>
+                  </includes>
+                  <targetPath>META-INF</targetPath>
+                </resource>
+                <resource>
+                  <directory>${project.basedir}/../egovframe-common-components/src/main/resources/META-INF</directory>
+                  <includes>
+                    <include>NOTICE</include>
+                  </includes>
+                  <targetPath>META-INF</targetPath>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

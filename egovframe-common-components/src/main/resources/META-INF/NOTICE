@@ -1,0 +1,16 @@
+egovframe-common-components
+Copyright 2026 Jin Kwon
+
+This product is an independent repackaging of the eGovFrame common components
+(https://github.com/eGovFramework/egovframe-common-components), compiled from the
+upstream source unmodified and published without its JSP views, Spring MVC
+controllers and bundled third-party jars.
+
+The eGovFrame common components are
+Copyright the Ministry of the Interior and Safety (MOIS; formerly MOPAS)
+and The eGovFrame Open Community,
+licensed under the Apache License, Version 2.0 (see META-INF/LICENSE).
+
+This product is not published or endorsed by the Ministry of the Interior and
+Safety, the National Information Society Agency (NIA), or the eGovFrame Open
+Community.

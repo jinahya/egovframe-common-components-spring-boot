@@ -1,0 +1,3 @@
+[submodule "upstream/egovframe-common-components"]
+	path = upstream/egovframe-common-components
+	url = https://github.com/eGovFramework/egovframe-common-components.git

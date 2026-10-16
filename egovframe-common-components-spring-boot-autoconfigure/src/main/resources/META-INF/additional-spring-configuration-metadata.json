@@ -1,0 +1,808 @@
+{
+  "properties": [
+    {
+      "name": "egovframe.components.cmm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cmm (6 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.adb.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.adb (2 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.bbs.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.bbs (8 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.cmt.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.cmt (3 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.cmy.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.cmy (6 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.com.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.com (2 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.ems.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.ems (9 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.ncm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.ncm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.scp.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.scp (2 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.sms.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.sms (3 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.smt.djm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.smt.djm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.smt.dsm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.smt.dsm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.smt.lsm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.smt.lsm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.smt.mrm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.smt.mrm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.smt.mtm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.smt.mtm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.smt.sam.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.smt.sam (2 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.smt.sdm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.smt.sdm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.smt.sim.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.smt.sim (2 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.smt.wmr.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.smt.wmr (2 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.stf.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.stf (3 beans)."
+    },
+    {
+      "name": "egovframe.components.cop.tpl.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.cop.tpl (2 beans)."
+    },
+    {
+      "name": "egovframe.components.dam.app.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.dam.app (2 beans)."
+    },
+    {
+      "name": "egovframe.components.dam.map.mat.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.dam.map.mat (2 beans)."
+    },
+    {
+      "name": "egovframe.components.dam.map.tea.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.dam.map.tea (2 beans)."
+    },
+    {
+      "name": "egovframe.components.dam.mgm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.dam.mgm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.dam.per.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.dam.per (2 beans)."
+    },
+    {
+      "name": "egovframe.components.dam.spe.req.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.dam.spe.req (2 beans)."
+    },
+    {
+      "name": "egovframe.components.dam.spe.spe.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.dam.spe.spe (2 beans)."
+    },
+    {
+      "name": "egovframe.components.ext.ldapumt.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.ext.ldapumt (3 beans)."
+    },
+    {
+      "name": "egovframe.components.sec.drm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sec.drm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sec.gmt.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sec.gmt (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sec.ram.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sec.ram (4 beans)."
+    },
+    {
+      "name": "egovframe.components.sec.rgm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sec.rgm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sec.rmt.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sec.rmt (2 beans)."
+    },
+    {
+      "name": "egovframe.components.ssi.syi.iis.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.ssi.syi.iis (2 beans)."
+    },
+    {
+      "name": "egovframe.components.ssi.syi.ims.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.ssi.syi.ims (2 beans)."
+    },
+    {
+      "name": "egovframe.components.ssi.syi.ist.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.ssi.syi.ist (2 beans)."
+    },
+    {
+      "name": "egovframe.components.ssi.syi.sim.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.ssi.syi.sim (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sts.bst.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sts.bst (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sts.cst.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sts.cst (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sts.dst.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sts.dst (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sts.rst.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sts.rst (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sts.sst.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sts.sst (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sts.ust.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sts.ust (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.bat.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.bat (7 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.cal.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.cal (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.ccm.acr.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.ccm.acr (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.ccm.adc.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.ccm.adc (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.ccm.cca.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.ccm.cca (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.ccm.ccc.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.ccm.ccc (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.ccm.cde.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.ccm.cde (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.ccm.icr.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.ccm.icr (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.ccm.zip.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.ccm.zip (4 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.log.clg.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.log.clg (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.log.lgm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.log.lgm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.log.plg.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.log.plg (3 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.log.slg.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.log.slg (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.log.tlg.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.log.tlg (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.log.ulg.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.log.ulg (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.log.wlg.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.log.wlg (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.mnu.bmm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.mnu.bmm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.mnu.mcm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.mnu.mcm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.mnu.mpm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.mnu.mpm (3 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.mnu.stm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.mnu.stm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.prm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.prm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.sym.bak.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.sym.bak (5 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.sym.nwk.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.sym.nwk (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.sym.srv.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.sym.srv (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.tbm.tbp.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.tbm.tbp (2 beans)."
+    },
+    {
+      "name": "egovframe.components.sym.tbm.tbr.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.sym.tbm.tbr (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uat.uap.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uat.uap (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uat.uia.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uat.uia (9 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.cmt.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.cmt (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.ans.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.ans (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.bnr.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.bnr (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.bnt.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.bnt (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.ctn.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.ctn (4 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.ecc.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.ecc (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.evt.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.evt (4 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.isg.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.isg (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.ism.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.ism (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.lsi.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.lsi (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.msi.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.msi (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.mtg.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.mtg (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.noi.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.noi (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.ntm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.ntm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.ntr.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.ntr (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.nts.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.nts (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.nws.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.nws (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.pwm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.pwm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.rec.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.rec (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.rmm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.rmm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.rsm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.rsm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.rsn.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.rsn (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.rss.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.rss (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.rwd.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.rwd (4 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.sit.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.sit (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.uas.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.uas (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.ulm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.ulm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.vct.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.vct (4 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.wik.bmk.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.wik.bmk (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.ion.yrc.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.ion.yrc (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.mpe.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.mpe (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olh.awm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olh.awm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olh.faq.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olh.faq (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olh.hpc.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olh.hpc (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olh.omm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olh.omm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olh.qna.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olh.qna (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olh.wor.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olh.wor (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olp.cns.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olp.cns (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olp.mgt.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olp.mgt (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olp.opm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olp.opm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olp.opp.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olp.opp (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olp.opr.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olp.opr (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olp.qim.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olp.qim (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olp.qmc.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olp.qmc (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olp.qqm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olp.qqm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olp.qri.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olp.qri (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olp.qrm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olp.qrm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.olp.qtm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.olp.qtm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.sam.cpy.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.sam.cpy (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.sam.ipm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.sam.ipm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.sam.stp.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.sam.stp (2 beans)."
+    },
+    {
+      "name": "egovframe.components.uss.umt.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.uss.umt (9 beans)."
+    },
+    {
+      "name": "egovframe.components.utl.pao.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.utl.pao (2 beans)."
+    },
+    {
+      "name": "egovframe.components.utl.sys.dbm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.utl.sys.dbm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.utl.sys.fsm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.utl.sys.fsm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.utl.sys.htm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.utl.sys.htm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.utl.sys.nsm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.utl.sys.nsm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.utl.sys.prm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.utl.sys.prm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.utl.sys.pxy.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.utl.sys.pxy (2 beans)."
+    },
+    {
+      "name": "egovframe.components.utl.sys.srm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.utl.sys.srm (2 beans)."
+    },
+    {
+      "name": "egovframe.components.utl.sys.ssy.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.utl.sys.ssy (2 beans)."
+    },
+    {
+      "name": "egovframe.components.utl.sys.trm.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "Enable upstream component egovframework.com.utl.sys.trm (2 beans)."
+    }
+  ]
+}
